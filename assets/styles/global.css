@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+#__nuxt {
+  /* height: 100svh; */
+}
+@font-face {
+  font-family: 'Hooked';
+  src: url(~/assets/fonts/Hooked.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rounded-font';
+  src: url(~/assets/fonts/Rounded-font.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'prose-antique';
+  src: url(~/assets/fonts/ProseAntique.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
