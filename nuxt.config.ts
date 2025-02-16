@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
-    'nuxt-mdi',
   ],
   css: ['~/assets/styles/global.css'],
   vite: {
