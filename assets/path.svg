@@ -1,8 +1,0 @@
-<svg 
-  xmlns='http://www.w3.org/2000/svg'
-  xmlns:xlink='http://www.w3.org/1999/xlink'
-width="400" height="600" viewBox="0 0 400 600">
-<path id="myClip" clipPathUnits="objectBoundingBox"
- d="M 0,10 C 0,10 195,-10 390,10 V 580 C 390,580 195,570 0,580 z"
- fill="white"/>
-</svg>
