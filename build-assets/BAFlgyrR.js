@@ -1,0 +1,1 @@
+import{_ as s,r as t,o,t as n,v as l,S as r,J as u,K as _}from"./CQfo_qoC.js";const c={__name:"default",setup(d){const e=t(!1);return o(()=>{e.value=!0}),(a,f)=>(n(),l("div",{class:u(["layout",{"layout-invisible":!_(e)}])},[r(a.$slots,"default",{},void 0)],2))}},p=s(c,[["__scopeId","data-v-21556156"]]);export{p as default};
