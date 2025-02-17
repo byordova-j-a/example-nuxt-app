@@ -1,1 +1,0 @@
-import{R as r,m as a}from"./BFUKRQ4z.js";const u=r(e=>{if(e.path==="/"&&(Object.keys(e.query).length>1||Object.keys(e.query).length&&e.query["book-page"]!=="3"&&e.query["book-page"]!=="1"))return a("/")});export{u as default};
