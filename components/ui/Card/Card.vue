@@ -35,7 +35,7 @@ const onClick = () => {
 const wandProperties = computed(() => {
   return {
     class: `card__wand_${componentProps.type}`,
-    image: `/wand${componentProps.type}.png`,
+    image: `/example-nuxt-app/wand${componentProps.type}.png`,
   };
 });
 
@@ -112,7 +112,7 @@ const wandProperties = computed(() => {
 }
 
 .card__content {
-  background: url(~/assets/images/card.jpg);
+  background: url(../card.jpg);
   background-size: 120%;
   background-position: center;
   color: white;
@@ -127,7 +127,7 @@ const wandProperties = computed(() => {
 
 .card__wand {
   opacity: 0;
-  transition-delay: 100ms;
+  transition-delay: 80ms;
   transition-property: opacity;
   user-select: none;
 }

@@ -22,27 +22,32 @@
         :class="{ 'list_flipped': clickedPageState[1] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="1.75"
-            :title-list="pageConfig[2].titleList[0]"
-            :paragraph-list="pageConfig[2].paragraphList.slice(0,5)"
-          />
-          <UIPageTextContent
-            :aspect-ratio="14"
-            :title-list="pageConfig[2].titleList[1]"
-          />
-          <UIPageTextContent
-            :aspect-ratio="8.5"
-            :title-list="pageConfig[2].titleList[2]"
-          />
-          <UIPageTextContent
-            :aspect-ratio="4.3"
-            :paragraph-list="pageConfig[2].paragraphList.slice(5)"
-          />
-          <UIPageTextContent
-            :aspect-ratio="14"
-            :title-list="pageConfig[2].titleList[3]"
-          />
+          <div class="list__content__header">
+            главное - уникальность
+          </div>
+          <div class="list__content__paragraph">
+            <p>
+              В уникальном образе творить уникальную магию - залог уникального успеха. Если с первым, уверены,
+              Вы успешно справитесь сами, то со вторым у многих возникают сложности.
+            </p>
+            <p>
+              На самом деле всё просто. Для уникальной магии Вам
+              просто нужна...
+            </p>
+          </div>
+          <div class="list__content__header">
+            уникальная
+          </div>
+          <div class="list__content__header">
+            волшебная палочка
+          </div>
+          <div class="list__content__paragraph">
+            <p>
+              Следуйте указаниям на следующей странице - тогда
+              Вы с лёгкостью найдёте уникальную волшебную
+              палочку!
+            </p>
+          </div>
         </div>
       </div>
       <div
@@ -54,10 +59,9 @@
         :class="{ 'list_flipped': clickedPageState[2] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="7"
-            :title-list="['В разработке']"
-          />l2
+          <div class="list__content__header">
+            в разработке
+          </div>
         </div>
       </div>
       <div
@@ -69,10 +73,9 @@
         :class="{ 'list_flipped': clickedPageState[3] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="7"
-            :title-list="['В разработке']"
-          />l3
+          <div class="list__content__header">
+            в разработке
+          </div>
         </div>
       </div>
       <div
@@ -84,10 +87,9 @@
         :class="{ 'list_flipped': clickedPageState[4] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="7"
-            :title-list="['В разработке']"
-          />l4
+          <div class="list__content__header">
+            в разработке
+          </div>
         </div>
       </div>
     </div>
@@ -109,11 +111,18 @@
         :class="{ 'list_flipped': clickedPageState[1] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="1 / 0.55"
-            :title-list="pageConfig[1].titleList"
-            :paragraph-list="pageConfig[1].paragraphList.slice(0,5)"
-          />
+          <div class="list__content__header">
+            самоучитель по магии
+          </div>
+          <div class="list__content__paragraph">
+            <p>
+              Если Вы всю жизнь мечтали научиться колдовать, Вы выбрали правильное пособие.
+            </p>
+            <p>
+              Всего за 3 шага Вы овладеете всеми базовыми навыками, необходимыми начинающему волшебнику.
+            </p>
+            <p>Если Вы готовы к тому, чтобы сделать магию частью жизни - жмите на кота. Он перенесёт Вас к первому уроку.</p>
+          </div>
           <div
             class="list__img-card"
             @click="clickPage(1)"
@@ -126,21 +135,16 @@
               draggable="false"
             >
           </div>
-          <UIPageTextContent
-            :aspect-ratio="1 / 0.14"
-            :paragraph-list="[pageConfig[1].paragraphList[5]]"
-          />
-          <div
-            class="list__text"
-          >
-            <UIPageTextContent
-              :aspect-ratio="1 / 0.15"
-              :paragraph-list="[pageConfig[1].paragraphList[6]]"
-            />
-            <a
-              class="list__link"
-              href="https://vk.com/fedja_gruppa"
-            />
+          <div class="list__content__paragraph">
+            <p>*С Федей всё в порядке, он просто удивлён беспрецендентным предложением*</p>
+            <p>
+              <a
+                class="list__content__link"
+                href="https://vk.com/fedja_gruppa"
+              >
+                **Жмите сюда - Вас сразу перенесёт к котику Феде**
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -153,11 +157,27 @@
         :class="{ 'list_flipped': clickedPageState[2] }"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="1.35"
-            :title-list="pageConfig[3].titleList"
-            :paragraph-list="pageConfig[3].paragraphList.slice(0,5)"
-          />
+          <div class="list__content__header">
+            найти - сложно
+          </div>
+          <div class="list__content__header">
+            забыть - невозможно
+          </div>
+          <div class="list__content__paragraph">
+            <p>
+              Перед Вами будут разложены 9 карт рубашками
+              вверх. Нажатие на карточку перевернёт её. На
+              лицевой стороне каждой карты изображена волшебная
+              палочка. Всего их 5. Все палочки, кроме одной,
+              изображены на 2-х картах. Вы сможете отыскать свою
+              уникальную палочку, если выкините все карты с
+              повторным изображением. Если готовы - жмите на
+              кота Вжуха!
+            </p>
+            <p>
+              Подсказка: Отыскав пару одинаковых карт, Вы выкините эту пару. Всё как в игре "найди пару".
+            </p>
+          </div>
           <div
             class="list__img-card"
             @click="navigateTo('/wands')"
@@ -182,10 +202,9 @@
         @click="clickPage(3)"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="7"
-            :title-list="['В разработке']"
-          />r3
+          <div class="list__content__header">
+            в разработке
+          </div>
         </div>
       </div>
       <div
@@ -198,10 +217,9 @@
         @click="clickPage(4)"
       >
         <div class="list__content">
-          <UIPageTextContent
-            :aspect-ratio="7"
-            :title-list="['В разработке']"
-          />r4
+          <div class="list__content__header">
+            в разработке
+          </div>
         </div>
       </div>
       <div
@@ -214,7 +232,7 @@
 </template>
 
 <script setup lang="ts">
-import { type TComponentProps, pageConfig } from './models';
+import type { TComponentProps } from './models';
 
 const componentProps = defineProps<TComponentProps>();
 
@@ -244,7 +262,6 @@ const clickPage = (page: number) => {
 };
 
 onMounted(() => {
-
   if (componentProps.initialPage <= 1) {
     timerId = setTimeout(() => {
       isOpened.value = true;
@@ -258,7 +275,7 @@ onMounted(() => {
   Array.from({ length: componentProps.initialPage - 1 }).forEach((item, key) => {
     setTimeout(() => {
       clickedPageState.value[key + 1] = true;
-    }, 300 * (key + 1));
+    }, 600 * (key + 1));
   });
 });
 
@@ -322,8 +339,8 @@ onMounted(() => {
     width: 32%;
   }
 
-  .list_1 .list__img {
-    height: 93%;
+  .list__img {
+    height: 100%;
   }
 
   .book__previous-side {
@@ -502,13 +519,13 @@ onMounted(() => {
   }
 
   .list_1 .list__img-card {
-    height: 25%;
-    width: 49%;
+    height: 17%;
+    width: 32.5%;
   }
 
   .list_2 .list__img-card {
-    height: 31.7%;
-    width: 35.5%;
+    height: 23%;
+    width: 25%;
   }
 
   .list__img {
@@ -519,8 +536,8 @@ onMounted(() => {
     clip-path: url(#pathList);
   }
 
-  .list_1 .list__img {
-    height: 95%;
+  .list__img {
+    height: 100%;
   }
 
   .book__previous-side {
@@ -564,7 +581,6 @@ onMounted(() => {
         width: 92%;
       }
     }
-
     .shadow {
       right: 0;
       transform: scale(0%, 100%);
@@ -697,18 +713,26 @@ onMounted(() => {
     height: get-mobile-size(2);
   }
 
-  .list_1 .list__img-card {
-    margin: get-mobile-size(4) 0;
-  }
-
   .list__content {
-    padding: get-mobile-size(5) get-mobile-size(2);
-  }
+    padding: get-mobile-size(7) get-mobile-size(5);
 
-  .list_1 .list__link {
-    height: get-mobile-size(24);
-    width: get-mobile-size(24);
-    border-width: get-mobile-size(2);
+    &__header {
+      font-size: get-mobile-size(18);
+      line-height: get-mobile-size(24);
+    }
+
+    &__paragraph {
+      font-size: get-mobile-size(11);
+      line-height: get-mobile-size(15);
+
+      & p {
+        margin: get-mobile-size(4) 0;
+      }
+    }
+
+    &__link:link {
+      text-decoration-thickness: get-mobile-size(1);
+    }
   }
 
   .book__previous-side  .cover {
@@ -750,18 +774,26 @@ onMounted(() => {
     height: get-tablet-size(3.6);
   }
 
-  .list_1 .list__img-card {
-    margin: get-tablet-size(7.2) 0;
-  }
-
   .list__content {
     padding: get-tablet-size(9) get-tablet-size(3.6);
-  }
 
-  .list_1 .list__link {
-    height: get-tablet-size(43);
-    width: get-tablet-size(43);
-    border-width: get-tablet-size(4);
+    &__header {
+      font-size: get-tablet-size(30);
+      line-height: get-tablet-size(36);
+    }
+
+    &__paragraph {
+      font-size: get-tablet-size(20);
+      line-height: get-tablet-size(25);
+
+      & p {
+        margin: get-tablet-size(15) 0;
+      }
+    }
+
+    &__link:link {
+      text-decoration-thickness: get-tablet-size(3);
+    }
   }
 
   .book__previous-side  .cover {
@@ -802,18 +834,26 @@ onMounted(() => {
     width: get-desktop-size(2);
   }
 
-  .list_1 .list__img-card {
-    margin: get-desktop-size(14) 0;
-  }
-
   .list__content {
-    padding: get-desktop-size(10);
-  }
+    padding: get-desktop-size(17) get-desktop-size(10);
 
-  .list_1 .list__link {
-    height: get-desktop-size(40);
-    width: get-desktop-size(40);
-    border-width: get-desktop-size(4);
+    &__header {
+      font-size: get-desktop-size(34);
+      line-height: get-desktop-size(40);
+    }
+
+    &__paragraph {
+      font-size: get-desktop-size(25);
+      line-height: get-desktop-size(30);
+
+      & p {
+        margin: get-desktop-size(20) 0;
+      }
+    }
+
+    &__link:link {
+      text-decoration-thickness: get-desktop-size(3);
+    }
   }
 
   .book__previous-side  .cover {
@@ -854,18 +894,26 @@ onMounted(() => {
     width: get-laptop-size(1.67);
   }
 
-  .list_1 .list__img-card {
-    margin: get-laptop-size(11.6) 0;
-  }
-
   .list__content {
-    padding: get-laptop-size(8.3);
-  }
+    padding: get-laptop-size(15) get-laptop-size(6);
 
-  .list_1 .list__link {
-    height: get-laptop-size(35);
-    width: get-laptop-size(35);
-    border-width: get-laptop-size(3);
+    &__header {
+      font-size: get-laptop-size(28);
+      line-height: get-laptop-size(34);
+    }
+
+    &__paragraph {
+      font-size: get-laptop-size(21);
+      line-height: get-laptop-size(26);
+
+      & p {
+        margin: get-laptop-size(12) 0;
+      }
+    }
+
+    &__link:link {
+      text-decoration-thickness: get-desktop-size(3);
+    }
   }
 
   .book__previous-side  .cover {
@@ -976,7 +1024,6 @@ onMounted(() => {
 }
 
 .list {
-  // background: no-repeat url(~/assets/images/book-page-left.png);
   background-size: cover !important;
   position: absolute;
 
@@ -986,6 +1033,37 @@ onMounted(() => {
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
+    font-family: prose-antique, serif;
+    user-select: none;
+
+    &__header {
+      width: 100%;
+      color: #3c2d92;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &__paragraph {
+      width: 100%;
+      color: #6f3e11;
+      text-indent: 6%;
+    }
+
+    &__link:link {
+      color: #6f3e11;
+    }
+
+    &__link:visited {
+      color:  #3c2d92;
+    }
+
+    &__link:link:hover {
+      color: #2c1602;
+    }
+
+    &__link:visited:hover {
+       color: #5442bc;
+    }
   }
 
   &__img {
@@ -993,38 +1071,13 @@ onMounted(() => {
     object-fit: contain;
   }
 
-  &__text {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-  }
-
   .list__img-border {
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: radial-gradient(ellipse at 50% 50%, #2d2170 60%, #6050b7  80%);
-  }
-
-  .list_2 &__img {
-    height: 95.5%;
-  }
-
-  .list_1 &__link {
-    position: absolute;
-    cursor: pointer;
-    text-decoration: none;
-    background: url(~/assets/images/cat-icon.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    overflow: hidden;
-    border-style: solid;
-    border-color: #6f3e11;
   }
 }
 
@@ -1035,6 +1088,8 @@ onMounted(() => {
   align-items: center;
   align-self: center;
   cursor: pointer;
+  padding: 0.5%;
+  box-sizing: border-box;
 }
 
 

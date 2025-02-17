@@ -113,11 +113,6 @@ onMounted(() => {
 
 </script>
 <style scoped lang="scss">
-@media (orientation: portrait) {
-  // .content_centered {
-  //   transform: rotate(-90deg);
-  // }
-}
 @media (orientation: landscape) {
   .card-holder {
     animation: rotate 16s infinite linear forwards;
@@ -151,59 +146,14 @@ onMounted(() => {
     100% {
       transform: rotate(90deg);
     }
-
   }
+
   .card-holder {
     width: auto;
     height: 0;
     transform: rotate(90deg);
     animation: stagger 3s infinite linear forwards;
   }
-
-  // .card-holder_num-0 {
-  //   bottom: get-mobile-size(200);
-  //   right: get-mobile-size(70);
-  // }
-
-  // .card-holder_num-1 {
-  //   bottom: get-mobile-size(200);
-  //   right: get-mobile-size(-40);
-  // }
-
-  // .card-holder_num-2 {
-  //   bottom: get-mobile-size(200);
-  //   left: get-mobile-size(70);
-  // }
-
-  // .card-holder_num-3 {
-  //   bottom: get-mobile-size(0);
-  //   right: get-mobile-size(70);
-  // }
-
-  // .card-holder_num-4 {
-  //   bottom: get-mobile-size(0);
-  //   right: get-mobile-size(-40);
-  // }
-
-  // .card-holder_num-5 {
-  //   bottom: get-mobile-size(0);
-  //   left: get-mobile-size(70);
-  // }
-
-  // .card-holder_num-6 {
-  //   top: get-mobile-size(200);
-  //   right: get-mobile-size(70);
-  // }
-
-  // .card-holder_num-7 {
-  //   top: get-mobile-size(200);
-  //   right: get-mobile-size(-40);
-  // }
-
-  // .card-holder_num-8 {
-  //   top: get-mobile-size(200);
-  //   left: get-mobile-size(70);
-  // }
 
   .card-holder_num {
     &-0,&-1,&-2 {
@@ -311,17 +261,8 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-
   animation-play-state: paused;
 }
-
-// .card-holder_num {
-//   @for $n from 1 through 9 {
-//     &-#{$n} {
-//       animation-delay: calc($n * 860ms);
-//     }
-//   }
-// }
 
 @keyframes rotate {
   0% {

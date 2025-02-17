@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxt/eslint": "0.7.5",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^2.13.0",
     "eslint-plugin-vue": "^9.32.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.83.4",
     "typescript": "^5.7.3"
   }

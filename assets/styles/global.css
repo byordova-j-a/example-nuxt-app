@@ -1,9 +1,6 @@
 body {
   margin: 0;
 }
-#__nuxt {
-  /* height: 100svh; */
-}
 @font-face {
   font-family: 'Hooked';
   src: url(~/assets/fonts/Hooked.ttf);
